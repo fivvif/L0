@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Information</title>
+</head>
+<body>
+    <h1>Order Information</h1>
+    <p>Order UID: {{.OrderUID}}</p>
+    <p>Track Number: {{.TrackNumber}}</p>
+    <p>Entry: {{.Entry}}</p>
+    <h2>Delivery Information</h2>
+    <p>Name: {{.Delivery.Name}}</p>
+    <p>Phone: {{.Delivery.Phone}}</p>
+    <p>Zip: {{.Delivery.Zip}}</p>
+    <p>City: {{.Delivery.City}}</p>
+    <p>Address: {{.Delivery.Address}}</p>
+    <p>Region: {{.Delivery.Region}}</p>
+    <p>Email: {{.Delivery.Email}}</p>
+    <h2>Payment Information</h2>
+    <p>Transaction: {{.Payment.Transaction}}</p>
+    <p>Request ID: {{.Payment.RequestID}}</p>
+    <p>Currency: {{.Payment.Currency}}</p>
+    <p>Provider: {{.Payment.Provider}}</p>
+    <p>Amount: {{.Payment.Amount}}</p>
+    <p>Payment Date: {{.Payment.PaymentDt}}</p>
+    <p>Bank: {{.Payment.Bank}}</p>
+    <p>Delivery Cost: {{.Payment.DeliveryCost}}</p>
+    <p>Goods Total: {{.Payment.GoodsTotal}}</p>
+    <p>Custom Fee: {{.Payment.CustomFee}}</p>
+    <h2>Items</h2>
+    <ul>
+        {{range .Items}}
+        <li>
+            <p>ChrtID: {{.ChrtID}}</p>
+            <p>Track Number: {{.TrackNumber}}</p>
+            <p>Name: {{.Name}}</p>
+            <p>Price: {{.Price}}</p>
+            <p>RID: {{.Rid}}</p>
+            <p>Sale: {{.Sale}}</p>
+            <p>Size: {{.Size}}</p>
+            <p>Total Price: {{.TotalPrice}}</p>
+            <p>NM ID: {{.NmID}}</p>
+            <p>Brand: {{.Brand}}</p>
+            <p>Status: {{.Status}}</p>
+        </li>
+        {{end}}
+    </ul>
+    <p>Locale: {{.Locale}}</p>
+    <p>Internal Signature: {{.InternalSignature}}</p>
+    <p>Customer ID: {{.CustomerID}}</p>
+    <p>Delivery Service: {{.DeliveryService}}</p>
+    <p>Shardkey: {{.Shardkey}}</p>
+    <p>SMID: {{.SMID}}</p>
+    <p>Date Created: {{.DateCreated}}</p>
+    <p>Oof Shard: {{.OofShard}}</p>
+</body>
+</html>

@@ -1,0 +1,62 @@
+{
+  "order_uid": "dshj24hvjhj23kdd2",
+  "track_number": "NEWTRACK12345",
+  "entry": "NEWENTRY",
+  "delivery": {
+    "name": "John Doe",
+    "phone": "+1234567890",
+    "zip": "123456",
+    "city": "New City",
+    "address": "123 Main Street",
+    "region": "State",
+    "email": "johndoe@example.com"
+  },
+  "payment": {
+    "transaction": "t3sttr4ns4ct10n",
+    "request_id": "r3qu3st123",
+    "currency": "EUR",
+    "provider": "payprovider",
+    "amount": 2500,
+    "payment_dt": 1678901234,
+    "bank": "beta",
+    "delivery_cost": 1200,
+    "goods_total": 1300,
+    "custom_fee": 50
+  },
+  "items": [
+    {
+      "chrt_id": 98765,
+      "track_number": "NEWTRACK12345",
+      "price": 600,
+      "rid": "rid1234567890",
+      "name": "Shoes",
+      "sale": 10,
+      "size": "42",
+      "total_price": 540,
+      "nm_id": 54321,
+      "brand": "NewBrand",
+      "status": 201
+    },
+    {
+      "chrt_id": 54321,
+      "track_number": "NEWTRACK12345",
+      "price": 800,
+      "rid": "rid0987654321",
+      "name": "Jacket",
+      "sale": 20,
+      "size": "L",
+      "total_price": 640,
+      "nm_id": 98765,
+      "brand": "FashionCo",
+      "status": 203
+    }
+  ],
+  "locale": "fr",
+  "internal_signature": "s1gn4tur3t3st",
+  "customer_id": "johndoe123",
+  "delivery_service": "express",
+  "shardkey": "12",
+  "sm_id": 42,
+  "date_created": "2023-10-17T15:30:00Z",
+  "oof_shard": "2"
+}
